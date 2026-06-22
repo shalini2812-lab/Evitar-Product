@@ -1,0 +1,27 @@
+/* Evitar Agent Platform — global styles (fonts, resets, keyframes).
+   NOTE: the rest of the design uses inline styles on each element in index.html.
+   This file holds only the rules that cannot be inline. */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap");
+
+* { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #06070C; }
+  ::selection { background: rgba(25,224,140,0.28); color: #fff; }
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-track { background: #06070C; }
+  ::-webkit-scrollbar-thumb { background: #1a2233; border-radius: 8px; border: 2px solid #06070C; }
+  a { text-decoration: none; }
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; border-radius: 4px; outline: none; cursor: pointer; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%; background: #0a0d15; border: 2px solid #19E08C; box-shadow: 0 0 0 4px rgba(25,224,140,0.14), 0 2px 8px rgba(0,0,0,0.5); cursor: pointer; }
+  input[type=range]::-moz-range-thumb { width: 15px; height: 15px; border-radius: 50%; background: #0a0d15; border: 2px solid #19E08C; cursor: pointer; }
+  @keyframes evRise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes evSpin { to { transform: rotate(360deg); } }
+  @keyframes evPulse { 0%,100% { opacity: 0.4; } 50% { opacity: 0.75; } }
+  @keyframes evSheen { from { background-position: 200% 0; } to { background-position: -60% 0; } }
+  @keyframes evSweep { from { background-position: -40% 0; } to { background-position: 140% 0; } }
+  @keyframes evGlowPulse { 0%,100% { box-shadow: 0 0 14px -8px rgba(25,224,140,0.5); } 50% { box-shadow: 0 0 22px -4px rgba(25,224,140,0.6); } }
+  @media (max-width: 760px) {
+    [data-nav-links] { display: none !important; }
+    h1 { font-size: 44px !important; }
+  }

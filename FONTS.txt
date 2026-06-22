@@ -1,0 +1,12 @@
+Fonts (Google Fonts):
+- Space Grotesk (headings)
+- Inter (body)
+- Space Mono (labels / mono)
+Loaded via @import in styles.css and a <link> in index.html.
+
+Icons: all agent icons are inline SVG (see AgentIcon.dc.html for the source set:
+voice=waveform, whatsapp=bubble, chat=window, form=doc+check, field=pin,
+quality=gauge+check, command=2x2 grid). No raster icon assets.
+
+Images: the page uses no photographic assets. reference-process-overview.png is a
+product screenshot included only as visual context for the Command Center.
